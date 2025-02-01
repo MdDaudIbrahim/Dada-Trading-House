@@ -1,0 +1,193 @@
+/* Staff Section - Same Background as Services and Contact */
+#staff {
+    position: relative;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #3484d4 0%, #b57183 70%, #a12a2e 100%);
+    overflow: hidden;
+    color: white; /* Ensure text contrast */
+    /* display: flex; */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure the section takes up full viewport height */
+}
+
+/* Geometric Background Overlay */
+#staff::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Staff Title */
+.staff-title {
+    text-align: center;
+    margin-bottom: 1rem; /* Space for underline */
+    color: white; /* Updated for better contrast */
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-in-out;
+    position: relative; /* For positioning the underline */
+}
+
+/* Underline for Staff Title */
+.staff-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px; /* Space between title and underline */
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transform: translateX(-50%);
+}
+
+/* Fade-in Animation for Title */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --------------------------------------------- */
+/* Staff Carousel */
+.staff-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: transparent; /* Remove old background */
+    padding: 3rem 0;
+}
+
+/* Staff Container */
+.staff-container {
+    display: flex;
+    animation: slideShow 15s infinite linear;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Staff Member Card */
+.staff-member {
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    color: white;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.staff-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.staff-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 5px solid rgba(255, 255, 255, 0.2); /* Updated border color */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.staff-member:hover img {
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.staff-member h3 {
+    color: white; /* Updated for better contrast */
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.staff-member .position {
+    color: rgba(255, 255, 255, 0.9); /* Updated for better contrast */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.staff-member .experience {
+    color: rgba(255, 255, 255, 0.8); /* Updated for better contrast */
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Carousel Animation */
+@keyframes slideShow {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Staff Slide (Alternative Carousel) */
+.staff-slide {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.staff-slide.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

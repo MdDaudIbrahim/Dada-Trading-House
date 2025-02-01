@@ -1,0 +1,148 @@
+/* Global Styles */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #ff6f61;
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --light-text-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+p { font-size: 1.1rem; }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Utility Classes */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.bg-light {
+    background-color: var(--bg-color);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--secondary-color);
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes tipsy {
+    0% {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+}
+
+
+
+
+
+/* Unique Underline Effect for Section Titles */
+.section-title {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    display: block;
+    padding-bottom: 10px;
+    width: 100%; /* Ensures it occupies full width for centering */
+    text-align: center;
+}
+
+/* Wavy Underline */
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 4px;
+    transform: translateX(-50%);
+    animation: waveLine 2s ease-in-out infinite alternate;
+}
+
+/* Hover Expansion Effect */
+.section-title:hover::after {
+    width: 120px;
+    height: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔄 Underline Animation */
+@keyframes waveLine {
+    0% { width: 60px; opacity: 0.7; }
+    50% { width: 90px; opacity: 1; }
+    100% { width: 70px; opacity: 0.8; }
+}

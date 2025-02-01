@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dada Trading House</title>
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Load Fonts Faster -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">  <!-- Moved Up for Faster Rendering -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/staff.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Defer JavaScript Loading -->
+    <script src="script.js" defer></script>
+
+    <style>
+        .hero-content h1:before,
+        .hero-content h1:after {
+            display: none;
+        }
+    </style>
+</head>
+
+    
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html" target="_self"><i class="fas fa-chart-line"></i> Dada Trading House</a>
+
+
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Welcome to Dada Trading House</h1>
+                <p>Your Trusted Partner for Telecom Solutions</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hero-card-content">
+                        <div class="hero-card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Official Distributor Of ROBI & AIRTEL</h3>
+                        <p>Authorized distributor for Robi Axiata Limited in Siddhirgonj, Narayanganj</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Us</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>Welcome to Dada trading house, the official distributor for Robi Axiata Limited in Siddhirgonj, Narayanganj. We are committed to providing top-notch telecom solutions to local businesses, ensuring seamless connectivity and exceptional service.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="50000">0</span>+
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="10">0</span>
+                            <span class="stat-label">Years of Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="/img/aboutus.webp" alt="About Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <div class="services-grid">
+                <div class="service" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-sim-card"></i>
+                    <h3>SIM Card Distribution</h3>
+                    <p>We offer a variety of SIM cards tailored to meet the diverse needs of individual and business users.</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Recharge Services</h3>
+                    <p>Our efficient mobile recharge services ensure your customers can easily top-up their accounts.</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-headset"></i>
+                    <h3>Customer Support</h3>
+                    <p>Our dedicated customer support team is always ready to assist you with any queries or issues.</p>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-plus"></i>
+                    <h3>Additional Services</h3>
+                    <ul>
+                        <li><strong>Retailer Support:</strong> Training and support for retailers.</li>
+                        <li><strong>Promotional Offers:</strong> Access to the latest promotional offers and discounts.</li>
+                        <li><strong>Customized Solutions:</strong> Tailored telecom solutions for your business needs.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Team</h2>
+            
+            <div class="team-grid">
+                <div class="team-column" data-aos="fade-right">
+                    <h3>Business Members</h3>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <img src="/img/bitu.jpg" alt="John Doe">
+                            <h4>Akhlack-Uz-Zaman(Bitu)</h4>
+                            <p class="position">CEO</p>
+                            <p class="contact">aaz.bitu@gmailcom</p>
+                            <p class="Phoneno"><i class="fas fa-phone"></i>01875-553222</p>
+                            <!-- <p class="info">Authorized Distributor Robi Axiata Limited</p> -->
+                        </div>
+                        <div class="team-member">
+                            <img src="/img/tazim.jpg" alt="Jane Smith">
+                            <h4>Tazim Babu</h4>
+                            <p class="position">CEO</p>
+                            <p class="contact">tazimbabu@gmail.com</p>
+                            <p class="Phoneno"><i class="fas fa-phone"></i>01913-00000</p>
+                            <!-- <p class="info">Authorized Distributor Robi Axiata Limited.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="team-column" data-aos="fade-left">
+                    <h3>Managers</h3>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <img src="/img/tj1.jpg" alt="Mike Johnson">
+                            <h4>Turjo Rakib</h4>
+                            <p class="position">Manager</p>
+                            <p class="contact">turjorakib@hmail.com</p>
+                            <p class="Phoneno"><i class="fas fa-phone"></i>01830-107070</p>
+                            <!-- <p class="info">Driving growth with innovative strategies.</p> -->
+                        </div>
+                        <div class="team-member">
+                            <img src="/img/manager2.jpg" alt="Sarah Lee">
+                            <h4>Anonymous</h4>
+                            <p class="position">Customer Relations Manager</p>
+                            <p class="contact">anonymous@gmail.com</p>
+                            <p class="Phoneno"><i class="fas fa-phone"></i>01830-000000</p>
+                            <!-- <p class="info">Ensuring top-notch customer satisfaction.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+<!-- ------------------------------------------------------------------>
+        <section id="staff" class="section">
+            <h3 class="staff-title" data-aos="fade-up">Our Dedicated Staff</h3>
+            <div class="staff-carousel" data-aos="fade-up">
+                <div class="staff-slide active">
+                    <div class="staff-member">
+                        <h4>Aryan</h4>
+                        <p class="position">Project Manager</p>
+                        <p class="info">8+ years experience in managing large-scale projects across industries.</p>
+                    </div>
+                    <div class="staff-member">
+                        <h4>Tanisha</h4>
+                        <p class="position">UI/UX Designer</p>
+                        <p class="info">Specializes in creating intuitive and visually appealing interfaces.</p>
+                    </div>
+                    <div class="staff-member">
+                        <h4>Samir</h4>
+                        <p class="position">Data Analyst</p>
+                        <p class="info">Skilled in turning complex data into actionable insights for business growth.</p>
+                    </div>
+                </div>
+
+                <div class="staff-slide">
+                    <div class="staff-member">
+                        <h4>Isla</h4>
+                        <p class="position">Content Strategist</p>
+                        <p class="info">Develops compelling content strategies to boost brand engagement.</p>
+                    </div>
+                    <div class="staff-member">
+                        <h4>Kabir</h4>
+                        <p class="position">Operations Specialist</p>
+                        <p class="info">Excels in streamlining processes and ensuring operational efficiency.</p>
+                    </div>
+                    <div class="staff-member">
+                        <h4>Priya</h4>
+                        <p class="position">Social Media Manager</p>
+                        <p class="info">Experienced in curating impactful social media campaigns across platforms.</p>
+                    </div>
+                </div>
+
+                <div class="staff-slide">
+                    <div class="staff-member">
+                        <h4>Meera</h4>
+                        <p class="position">Human Resources Manager</p>
+                        <p class="info">10+ years of experience in fostering positive workplace cultures.</p>
+                    </div>
+                    <div class="staff-member">
+                        <h4>Rohan</h4>
+                        <p class="position">Software Developer</p>
+                        <p class="info">Proficient in full-stack development and building scalable applications.</p>
+                    </div>
+                    <div class="staff-member">
+                        <h4>Anika</h4>
+                        <p class="position">Graphic Designer</p>
+                        <p class="info">Talented in designing print and digital materials that captivate audiences.</p>
+                    </div>
+                </div>
+
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Dada Trading House , Narayanganj, Dhaka, Bangladesh</p>
+                    <p><i class="fas fa-phone"></i> 01830-107070</p>
+                    <p><i class="fas fa-phone"></i> 01875-553222</p>
+                    <p><i class="fas fa-envelope"></i> dadatradinghouse@gmail.com</p>
+                </div>
+                <div class="map-container" data-aos="fade-left">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.403398268858!2d90.50637167453111!3d23.69728429081495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b6937ea043d7%3A0xad52f908172abb6!2sDada%20Trading%20House!5e0!3m2!1sen!2sbd!4v1738268367972!5m2!1sen!2sbd"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dada Trading House. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
